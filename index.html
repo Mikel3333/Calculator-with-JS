@@ -52,20 +52,6 @@
     <input type="button" value="=" onclick="calculate()">
     <input type="button" value="/" onclick="addToDisplay('/')">
 </div>
-<script>
-    function addToDisplay(value) {
-        document.getElementById('display').value += value;
-    }
-
-    function clearDisplay() {
-        document.getElementById('display').value = '';
-    }
-
-    function calculate() {
-        var display = document.getElementById('display');
-        var result = eval(display.value);
-        display.value = result;
-    }
 </script>
 </body>
 </html>
